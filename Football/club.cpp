@@ -125,17 +125,6 @@ void divideInClubs(Club* arr, const std::string fileName) {
 	}
 }
 
-void findTheBestIn(Club* arr, int size, double(Club::*method)()) {
-	Club best = arr[0];
-	for (int i = 1; i < size; ++i) {
-		if ((best.*method)() < (arr[i].*method)()) {
-			best = arr[i];
-		}
-	}
-
-	best.printClub();
-}
-
 Club& Club::operator=(const Club& C)
 {
 	if (this != &C)
@@ -152,4 +141,15 @@ Club& Club::operator=(const Club& C)
 		}
 	}
 	return *this;
+}
+
+void findTheBestIn(Club* arr, int size, double(Club::*method)()) {
+	Club best = arr[0];
+	for (int i = 1; i < size; ++i) {
+		if ((best.*method)() < (arr[i].*method)()) {
+			best = arr[i];
+		}
+	}
+
+	best.printClub();
 }
