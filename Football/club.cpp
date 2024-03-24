@@ -25,6 +25,7 @@ Club::Club(const Club& C)
 	:clubName(C.clubName),
 	clubCoef(C.clubCoef),
 	capacity(C.capacity),
+	filled(C.filled),
 	arr(new Footballer[C.capacity])
 {
 	for (int i = 0; i < capacity; ++i) {
@@ -60,7 +61,8 @@ void Club::addToClub(Footballer& F) {
 void Club::printClub() const {
 	if (filled == 0) {
 		cout << "Club is empty; " << endl;
-	}
+		return;
+	} 
 
 	cout << "Club: " << clubName << ". Payment: " << clubCoef << " per goal. Members quantity: " << filled << endl;
 
