@@ -21,6 +21,7 @@ public:
 	
 	void print() const;
 	void readFrom(std::istream& in);
+	Footballer& operator=(const Footballer& F);
 };
 
 std::istream& operator>>(std::istream& in, Footballer& F);

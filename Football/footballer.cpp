@@ -49,3 +49,12 @@ istream& operator>>(istream& in, Footballer& F) {
 	return in;
 }
 
+Footballer& Footballer::operator=(const Footballer& F)
+{
+	footballerName = F.footballerName;
+	footballerSurname = F.footballerSurname;
+	footballerGoalls = F.footballerGoalls;
+	footballerCoef = F.footballerCoef;
+	return *this;
+}
+
