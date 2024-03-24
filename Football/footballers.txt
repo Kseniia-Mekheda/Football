@@ -1,0 +1,11 @@
+10
+RealMadrid Federico Valverde 23
+Liverpool Joe Gomez 12
+RealMadrid Jude Bellingham 22
+ManchesterUnited Tom Heaton 33
+Barcelona David Backham 40
+ManchesterUnited Cristiano Ronaldo 24
+RealMadrid Sergio Ramos 14
+Liverpool Fabian Mrozek 2
+RealMadrid Cristiano Ronaldo 35
+ManchesterUnited Christian Eriksen 20
