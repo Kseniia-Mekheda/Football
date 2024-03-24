@@ -135,3 +135,21 @@ void findTheBestIn(Club* arr, int size, double(Club::*method)()) {
 
 	best.printClub();
 }
+
+Club& Club::operator=(const Club& C)
+{
+	if (this != &C)
+	{
+		delete[] arr;
+		clubName = C.clubName;
+		clubCoef = C.clubCoef;
+		capacity = C.capacity;
+		filled = C.filled;
+		arr = new Footballer[capacity];
+		for (int i = 0; i < filled; ++i)
+		{
+			arr[i] = C.arr[i];
+		}
+	}
+	return *this;
+}

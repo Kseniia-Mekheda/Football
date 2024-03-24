@@ -4,46 +4,10 @@
 using namespace std;
 
 int main() {
-	/*Footballer F;
-	Footballer A("Cristiano", "Ronaldo", 20);
-	Footballer B(A);
-	
-	ifstream fin("footballers.txt");
-	Footballer C;
-	fin >> C;
-	fin.close();
-
-	A.print();
-	F.print();
-	B.print();
-	C.print();
-
-	Club M("A", 500);
-	M.addToClub(A); 
-	M.addToClub(C);
-	M.addToClub(C);
-	M.addToClub(C);
-	M.addToClub(C);
-	M.addToClub(C);
-	M.addToClub(C);
-	M.addToClub(C);
-	M.addToClub(C);
-	M.addToClub(C);
-	M.addToClub(C);
-	M.addToClub(C);
-
-
-	M.printClub();
-	M.sortByGoals();
-
-	M.printClub();
-	cout << M.calcSalary() << endl;
-	cout<<M.calcGoals()<<endl; */
-
 	int generalArrSize = 3;
 	Club* generalArr = new Club[generalArrSize];
 	generalArr[0] = Club("RealMadrid", 4000);
-	generalArr[1] = Club("ManchesterUnited", 5600);
+	generalArr[1] = Club("ManchesterUnited", 5300);
 	generalArr[2] = Club("Liverpool", 3200);
 
 	divideInClubs(generalArr, "footballers.txt");

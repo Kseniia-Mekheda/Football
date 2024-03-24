@@ -24,6 +24,8 @@ public:
 
 	double calcGoals();
 	double calcSalary();
+
+	Club& operator=(const Club& C);
 };
 
 void divideInClubs(Club* arr, const std::string fileName);
